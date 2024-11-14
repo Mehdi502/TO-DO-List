@@ -1,0 +1,102 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Formulaire d'ajout de tâche */
+  #task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  #task-form input, #task-form select, #task-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #task-form button {
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #task-form button:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Tableau des tâches */
+  #task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #task-table th, #task-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #task-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  #task-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  #task-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Style des colonnes */
+  #task-table .priority-low {
+    color: green;
+  }
+  
+  #task-table .priority-medium {
+    color: orange;
+  }
+  
+  #task-table .priority-high {
+    color: red;
+  }
+  
+  /* Boutons de contrôle des tâches */
+#task-controls {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #task-controls button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #task-controls button:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Masquer le formulaire par défaut */
+  #task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  

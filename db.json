@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Tâche 1",
+      "description": "Description 1",
+      "category": "Catégorie A",
+      "dueDate": "2023-01-01",
+      "priority": "low",
+      "progress": 20
+    },
+    {
+      "id": 2,
+      "title": "Tâche 2",
+      "description": "Description 2",
+      "category": "Catégorie B",
+      "dueDate": "2023-01-02",
+      "priority": "medium",
+      "progress": 80
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>To-Do List</h1>
+
+  <!-- Boutons de gestion des tâches -->
+  <div id="task-controls">
+    <button onclick="showAllTasks()">Toutes</button>
+    <button onclick="showCurrentTasks()">À faire</button>
+    <button onclick="showCompletedTasks()">Complétées</button>
+    <button onclick="ADDtask()">Ajouter une tâche</button>
+  </div>
+
+  <!-- Formulaire d'ajout de tâche -->
+  <form id="task-form" style="display: none;">
+    <input type="text" id="title" placeholder="Titre">
+    <input type="text" id="description" placeholder="Description">
+    <input type="text" id="category" placeholder="Catégorie">
+    <input type="date" id="dueDate">
+    <select id="priority">
+      <option value="low">Basse</option>
+      <option value="medium">Moyenne</option>
+      <option value="high">Haute</option>
+    </select>
+    <input type="number" id="progress" placeholder="Progression (%)" max="100" min="0">
+    <button type="button" onclick="addOrUpdateTask()">Ajouter</button>
+  </form>
+
+  <!-- Tableau des tâches -->
+  <table id="task-table">
+    <thead>
+      <tr>
+        <th>Tâche</th>
+        <th>Description</th>
+        <th>Catégorie</th>
+        <th>Échéance</th>
+        <th>Priorité</th>
+        <th>Avancement</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="task-list">
+      <!-- Les tâches seront ajoutées ici par JavaScript -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
